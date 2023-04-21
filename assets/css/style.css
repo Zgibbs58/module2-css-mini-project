@@ -15,7 +15,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     background-color: rgb(60, 62, 63);
-    color: hotpink;
+    color: rgb(232, 102, 236);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -46,25 +46,31 @@ section {
     flex-wrap: wrap;
 }
 
-article {
+.card {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: 2px dotted white;
-    padding: 2rem;
+    border: 2px dashed white;
+    padding: 2rem .5rem .5rem;
     align-items: center;
     flex: 1 1 30%;
     position: relative;
 }
 
-article h2 {
+.card h2 {
     position: absolute;
-    /* top: -20px; */
-    bottom: calc(100% - 20px);
+    top: -20px;
     z-index: 2;
     border: 2px solid white;
+    border-radius: 8px;
     background-color: rgb(60, 62, 63);
-    padding: .25rem;
+    padding: 5px;
+    width: 75%;
+    transition: all 0.5s ease-in-out;
+}
+
+.card h2:hover {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
 }
 
 article p {
