@@ -55,6 +55,7 @@ section {
     align-items: center;
     flex: 1 1 30%;
     position: relative;
+    transition: all 0.5s ease-in-out;
 }
 
 .card h2 {
@@ -69,21 +70,25 @@ section {
     transition: all 0.5s ease-in-out;
 }
 
-.card h2:hover {
+.card:hover, .card:hover h2 {
     box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
 }
 
 article p {
     padding-bottom: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
 }
 
 .code-container {
     display: flex;
-    background-image: linear-gradient(rgba(10, 10, 10, 0.3) 0%,
-    rgba(226, 22, 158, 0.644) 100%);
+    background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%,
+    rgba(232, 102, 236, 0.6) 100%);
     border-radius: 10px;
     justify-content: flex-start;
+    align-items: center;
     width: 100%;
+    height: 100%;
     
 }
 
