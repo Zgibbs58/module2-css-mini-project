@@ -18,25 +18,25 @@
                 <article class="card">
                     <h2>Flexbox Row</h2>
                     <p>Use these three properties to create a Flexbox row layout.</p>
-                        <pre class="code-container">
-                            <code>
-    .row {
+                    <pre class="code-container">
+                        <code>
+.row {
     display: flex
     flex-direction: row;
     flex-wrap: wrap;
-    }
-                            </code>
-                        </pre>
+}
+                        </code>
+                    </pre>
                 </article>
                 <article class="card">
                     <h2>Flexbox Column</h2>
                     <p>Use this to create a Flexbox column layout.</p>
                         <pre class="code-container">
                             <code>
-    .column {
+.column {
     display: flex
     flex-direction: column;
-    }
+}
                             </code>
                         </pre>
                 </article>
@@ -45,12 +45,12 @@
                     <p>Build a 12-column layout using CSS Grid.</p>
                         <pre class="code-container">
                             <code>
-    .grid {
+.grid {
     display: grid;
     width: 100%;
     grid-template-columns:
     repeat(12, 1 fr);
-    }
+}
                             </code>
                         </pre>
                 </article>
@@ -59,7 +59,7 @@
                     <p>This will create a background linear gradietn from top to bottom.</p>
                         <pre class="code-container">
                             <code>
-    .code-container { 
+.code-container { 
     background-image: linear-gradient
     (rgba(10, 10, 10, 0.3) 0%,
     rgba(226, 22, 158, 0.644) 100%);}
@@ -71,31 +71,30 @@
                     <p>Use transition and box shadows to glow on hover.</p>
                         <pre class="code-container">
                             <code>
-    .code-card h2 {
-        border-radius: 8px;
-        transition: all 0.5s ease-in-
-        out;
-    }
+.code-card h2 {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-
+    out;
+}
 
-    .card:hover,
-    .card:hover h2 {
-        box-shadow: inset 0px 0px 8px
-         rgba(232, 102, 236, 1), 0 0 15px
-        rgba(232, 102, 236, 1);
-    }
+.card:hover,
+.card:hover h2 {
+    box-shadow: inset 0px 0px 8px
+    rgba(232, 102, 236, 1), 0 0 15px
+    rgba(232, 102, 236, 1);
+}
                             </code>
                         </pre>
                 </article>
                 <article class="card">
-                    <h2>Flexbox Row</h2>
-                    <p>Use these three properties to create a Flexbox row layout.</p>
+                    <h2>Overlay Card with Title</h2>
+                    <p>Use position properties and negative margins to raise elements higher than their natural starting point.</p>
                         <pre class="code-container">
                             <code>
-    .row {
-    display: flex 
-    flex-direction: row;
-    flex-wrap: wrap;
-        }
+.card h2 {
+    position: relative;
+    margin-top: -20px;
+}
                             </code>
                         </pre>
                 </article>
